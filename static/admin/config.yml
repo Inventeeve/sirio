@@ -2,24 +2,29 @@ backend:
   name: git-gateway
   branch: main
 
-# local_backend: true
+local_backend: true
 
 media_folder: static/images
 public_folder: /images
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
-    path: "{{title}}/index"
+  - label: Page
+    name: page
+    delete: false
     editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      preview: true
+    files:
+      - file: content/pages/home.md
+        label: Home Page
+        name: home-page
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: HomePage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: "" }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
