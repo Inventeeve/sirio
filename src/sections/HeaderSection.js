@@ -1,5 +1,12 @@
 import React from "react"
 
+const Nav = [
+  { label: "Chi siamo", link: "#", type: "standard" },
+  { label: "Cosa facciamo", link: "#", type: "standard" },
+  { label: "Listino prezzi", link: "#", type: "standard" },
+  { label: "Contattaci", link: "#", type: "accent" },
+]
+
 const HeaderSection = ({ data }) => (
   <>
     <div className="relative bg-white overflow-hidden">
@@ -16,71 +23,19 @@ const HeaderSection = ({ data }) => (
 
           <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-              <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#" aria-label="Home">
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                      alt="Logo"
-                    />
-                  </a>
-                  <div className="-mr-2 flex items-center md:hidden">
-                    <button
-                      type="button"
-                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                      id="main-menu"
-                      aria-label="Main menu"
-                      aria-haspopup="true"
-                    >
-                      <svg
-                        className="h-6 w-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
               <div className="hidden md:block md:ml-10 md:pr-4">
-                <a
-                  href="#"
-                  className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Product
-                </a>
-                <a
-                  href="#"
-                  className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Company
-                </a>
-                <a
-                  href="#"
-                  className="ml-8 font-medium text-indigo-600 hover:text-indigo-900 transition duration-150 ease-in-out"
-                >
-                  Log in
-                </a>
+                {Nav.map(nav => (
+                  <a
+                    href={nav.link}
+                    className={`${
+                      nav.type === "accent"
+                        ? `text-pink-600 hover:text-pink-900`
+                        : `text-gray-500 hover:text-gray-900`
+                    } mr-8 font-medium transition duration-150 ease-in-out`}
+                  >
+                    {nav.label}
+                  </a>
+                ))}
               </div>
             </nav>
           </div>
@@ -94,13 +49,7 @@ const HeaderSection = ({ data }) => (
                 aria-labelledby="main-menu"
               >
                 <div className="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                      alt=""
-                    />
-                  </div>
+                  <div></div>
                   <div className="-mr-2">
                     <button
                       type="button"
@@ -124,43 +73,19 @@ const HeaderSection = ({ data }) => (
                   </div>
                 </div>
                 <div className="px-2 pt-2 pb-3">
-                  <a
-                    href="#"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                    role="menuitem"
-                  >
-                    Product
-                  </a>
-                  <a
-                    href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                    role="menuitem"
-                  >
-                    Features
-                  </a>
-                  <a
-                    href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                    role="menuitem"
-                  >
-                    Marketplace
-                  </a>
-                  <a
-                    href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                    role="menuitem"
-                  >
-                    Company
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
-                    role="menuitem"
-                  >
-                    Log in
-                  </a>
+                  {Nav.map((nav, index) => (
+                    <a
+                      href={nav.link}
+                      className={`${index > 1 && "mt-1"} ${
+                        nav.type === "accent"
+                          ? `text-pink-600 bg-gray-50 hover:bg-gray-100 hover:text-pink-700 focus:bg-gray-100 focus:text-pink-700 `
+                          : `text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:text-gray-900 focus:bg-gray-50 `
+                      } focus:outline-none block px-3 py-2 rounded-md text-base font-medium  transition duration-150 ease-in-out`}
+                      role="menuitem"
+                    >
+                      {nav.label}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -170,27 +95,31 @@ const HeaderSection = ({ data }) => (
             <div className="sm:text-center lg:text-left">
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 {data.title}
-                <br className="xl:hidden" />
-                <span className="text-indigo-600">online business</span>
+                <br />
+              </h2>
+              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-pink-600 sm:text-4xl sm:leading-none md:text-4xl">
+                {data.subtitle}
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                {data.subtitle}
+                Sirio la stella del benessere e' un centro estetico sito in
+                Cogliate specializzato in diverse tipologie di trattamenti
+                estetici, personalizzati ed avanzati.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
-                    Get started
+                    Scopri di più
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-pink-700 bg-pink-100 hover:text-pink-600 hover:bg-pink-50 focus:outline-none focus:shadow-outline-green focus:border-pink-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
-                    Live demo
+                    Contattaci
                   </a>
                 </div>
               </div>
@@ -201,7 +130,7 @@ const HeaderSection = ({ data }) => (
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+          src={data.featuredImage}
           alt=""
         />
       </div>

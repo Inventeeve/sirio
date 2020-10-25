@@ -38,3 +38,38 @@ collections:
                   { label: Body, name: body, widget: text },
                 ],
             }
+          # Footer Section
+          - {
+              label: Footer,
+              name: footer,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Social Links. Enter 'null' for empty Links,
+                    name: social,
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: Enter Facebook URL,
+                          name: facebook,
+                          widget: text,
+                          required: false,
+                        },
+                        {
+                          label: Enter Instagram URL,
+                          name: instagram,
+                          widget: text,
+                          required: false,
+                        },
+                        {
+                          label: Enter Twitter URL,
+                          name: twitter,
+                          widget: text,
+                          required: false,
+                        },
+                      ],
+                  },
+                ],
+            }

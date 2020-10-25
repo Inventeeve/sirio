@@ -1,12 +1,16 @@
 ---
 template: HomePage
 slug: /
-featuredImage: /images/screen-shot-2020-10-19-at-21.15.12.png
-title: Awesome website
-subtitle: This is a test subtitle
+featuredImage: /images/uby-yanes-hopbxvvcw6k-unsplash.jpg
+title: Sirio
+subtitle: la stella del benessere
 blurbs:
   - title: Test Blurb Title
     body: Test Blurb Body
   - title: This is another Blurb
     body: Wow, another Blurb body
+footer:
+  social:
+    facebook: https://www.facebook.com/Summa.Laura.77
+    instagram: https://www.instagram.com/sirio.lastelladelbenessere/
 ---

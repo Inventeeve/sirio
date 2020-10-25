@@ -55,10 +55,6 @@ exports.createPages = ({ actions, graphql }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-	// Since .md posts are being sourced outside of src/pages,
-	// each post needs to be given a slug which tells Gatsby the URL
-	// to render to.
-
 	if (node.internal.type === 'MarkdownRemark') {
 		const value = createFilePath({ node, getNode });
 
