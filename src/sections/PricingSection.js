@@ -58,7 +58,7 @@ const PricingSections = () => (
     <div className="bg-white">
       <div className="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-5xl leading-none font-extrabold text-gray-900 sm:text-center">
+          <h1 className="text-4xl leading-none font-extrabold text-gray-900 sm:text-center">
             Listino Prezzi
           </h1>
           <p className="mt-5 text-xl leading-7 text-gray-500 sm:text-center">

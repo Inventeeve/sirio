@@ -3,6 +3,7 @@ import FeaturesSection from "../sections/FeaturesSection"
 import HeaderSection from "../sections/HeaderSection"
 import PricingSection from "../sections/PricingSection"
 import FooterSection from "../sections/FooterSection"
+import ContactSection from "../sections/ContactSection"
 
 export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => (
   <div>
@@ -10,6 +11,7 @@ export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => 
     <div className="container mx-auto">
       <FeaturesSection blurbs={blurbs} />
 			<PricingSection />
+			<ContactSection />
       <FooterSection />
     </div>
   </div>
@@ -31,6 +33,7 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         blurbs {
+					image
           title
           body
         }
