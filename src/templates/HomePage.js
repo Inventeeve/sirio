@@ -1,7 +1,7 @@
 import React from "react"
-import Footer from "../components/Footer"
-import FeaturesSection from "../sections/FeatruresSection"
+import FeaturesSection from "../sections/FeaturesSection"
 import HeaderSection from "../sections/HeaderSection"
+import PricingSection from "../sections/PricingSection"
 import FooterSection from "../sections/FooterSection"
 
 export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => (
@@ -9,6 +9,7 @@ export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => 
     <HeaderSection data={{ title, subtitle, featuredImage }} />
     <div className="container mx-auto">
       <FeaturesSection blurbs={blurbs} />
+			<PricingSection />
       <FooterSection />
     </div>
   </div>

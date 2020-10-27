@@ -8,54 +8,44 @@ const FooterSection = () => (
 			<div className="md:grid md:grid-cols-2 md:gap-8">
 				<div>
 					<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
-						Solutions
+						Soluzioni
 					</h4>
 					<ul className="mt-4 space-y-4">
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Marketing
+								Link 1
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Analytics
+								Link 2
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Commerce
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Insights
+								Link 3
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div className="mt-12 md:mt-0">
 					<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
-						Support
+						Prenota un appuntamento
 					</h4>
 					<ul className="mt-4 space-y-4">
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Pricing
+								Link 1
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Documentation
+								Link 2
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Guides
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								API Status
+								Link 3
 							</a>
 						</li>
 					</ul>
@@ -64,54 +54,34 @@ const FooterSection = () => (
 			<div className="md:grid md:grid-cols-2 md:gap-8">
 				<div>
 					<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
-						Company
+						Chi siamo
 					</h4>
 					<ul className="mt-4 space-y-4">
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								About
+								Link 1
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Blog
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Jobs
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Press
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Partners
+								Link 2
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div className="mt-12 md:mt-0">
 					<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
-						Legal
+						Altro
 					</h4>
 					<ul className="mt-4 space-y-4">
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Claim
+								Link 1
 							</a>
 						</li>
 						<li>
 							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Privacy
-							</a>
-						</li>
-						<li>
-							<a href="#" className="text-base leading-6 text-gray-500 hover:text-gray-900">
-								Terms
+								Link 2
 							</a>
 						</li>
 					</ul>
@@ -119,7 +89,7 @@ const FooterSection = () => (
 			</div>
 		</div>
 		<div className="mt-12 xl:mt-0">
-			<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
+			{/* <h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
 				Language &amp; Currency
 			</h4>
 			<form className="mt-4 space-y-4 sm:max-w-xs">
@@ -160,16 +130,16 @@ const FooterSection = () => (
 						</div>
 					</div>
 				</fieldset>
-			</form>
+			</form>  */}
 		</div>
 	</div>
 	<div className="border-t border-gray-200 pt-8 space-y-4 lg:space-y-0 lg:flex lg:items-center lg:justify-between xl:mt-0">
 		<div className="space-y-2">
 			<h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
-				Subscribe to our newsletter
+				Iscriviti alla newsletter
 			</h4>
 			<p className="text-base leading-6 text-gray-500">
-				The latest news, articles, and resources, sent to your inbox weekly.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus ab odit amet
 			</p>
 		</div>
 		<form className="sm:flex sm:max-w-md">
@@ -177,7 +147,7 @@ const FooterSection = () => (
 			<input type="email" id="emailAddress" required className="appearance-none min-w-0 w-full bg-white border border-gray-300 py-2 px-4 text-base leading-6 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline focus:placeholder-gray-400 transition duration-150 ease-in-out sm:max-w-xs" placeholder="Enter your email" />
 			<div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
 				<button type="submit" className="w-full bg-pink-600 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base leading-6 font-medium text-white hover:bg-pink-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-					Subscribe
+					Iscriviti
 				</button>
 			</div>
 		</form>
