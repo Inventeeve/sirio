@@ -3,7 +3,7 @@ import React from "react"
 const FooterSection = () => (
   <footer classNameName="bg-white">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
+      {/* <div className="pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
         <div className="grid grid-cols-2 gap-8 xl:col-span-4">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
@@ -119,7 +119,8 @@ const FooterSection = () => (
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-200 pt-8 space-y-4 lg:space-y-0 lg:flex lg:items-center lg:justify-between xl:mt-0">
+       */}
+			<div className="border-t border-gray-200 pt-8 space-y-4 lg:space-y-0 lg:flex lg:items-center lg:justify-between xl:mt-0">
         <div className="space-y-2">
           <h4 className="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase">
             Resta in contatto
