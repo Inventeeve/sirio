@@ -4,14 +4,21 @@ import HeaderSection from "../sections/HeaderSection"
 import PricingSection from "../sections/PricingSection"
 import FooterSection from "../sections/FooterSection"
 import ContactSection from "../sections/ContactSection"
+import SocialSection from "../sections/SocialSection"
 
-export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => (
+export const HomePageTemplate = ({
+  title,
+  subtitle,
+  blurbs,
+  featuredImage,
+}) => (
   <div>
     <HeaderSection data={{ title, subtitle, featuredImage }} />
     <div className="container mx-auto">
       <FeaturesSection blurbs={blurbs} />
-			<PricingSection />
-			<ContactSection />
+      <PricingSection />
+      <SocialSection />
+      <ContactSection />
       <FooterSection />
     </div>
   </div>
@@ -19,7 +26,15 @@ export const HomePageTemplate = ({ title, subtitle, blurbs, featuredImage }) => 
 
 const HomePage = ({ data: { page } }) => {
   const { title, subtitle, blurbs, featuredImage } = page.frontmatter
-  return <HomePageTemplate title={title} subtitle={subtitle} blurbs={blurbs} featuredImage={featuredImage} />
+
+  return (
+    <HomePageTemplate
+      title={title}
+      subtitle={subtitle}
+      blurbs={blurbs}
+      featuredImage={featuredImage}
+    />
+  )
 }
 
 export default HomePage
@@ -33,7 +48,7 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         blurbs {
-					image
+          image
           title
           body
         }

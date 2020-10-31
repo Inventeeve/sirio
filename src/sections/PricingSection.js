@@ -84,7 +84,8 @@ const PricingSections = () => (
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
           {Listino.map(entry => (
-            <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            // <div className="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+            <div className="rounded-lg shadow-lg divide-y divide-gray-200">
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
                   {entry.category}

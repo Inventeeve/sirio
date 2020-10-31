@@ -23,7 +23,7 @@ const FeaturesSection = ({ blurbs }) => (
           <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {/* Blurbs */}
             {blurbs.map(blurb => (
-              <li className="mt-10 md:mt-0">
+              <li className="rounded-lg shadow-lg mt-10 md:mt-0">
                 <div className="flex">
                   <li className="mt-10 md:mt-0 w-full">
                     <div className="h-64 max-w-sm w-full lg:max-w-full lg:flex">
@@ -34,7 +34,8 @@ const FeaturesSection = ({ blurbs }) => (
                         }}
                         title="Woman holding a mug"
                       ></div>
-                      <div className="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-200 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                      {/* <div className="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-200 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"> */}
+                      <div className="w-full bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
                           <div className="text-gray-900 font-bold text-xl mb-2">
                             {blurb.title}
