@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-# local_backend: true
+local_backend: true
 
 media_folder: static/images
 public_folder: /images
@@ -37,6 +37,16 @@ collections:
                   { label: Image, name: image, widget: image },
                   { label: Title, name: title, widget: text },
                   { label: Body, name: body, widget: text },
+                ],
+            }
+          - {
+              label: listino,
+              name: listino,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: title, widget: text },
+                  { label: Price, name: body, widget: text },
                 ],
             }
           # Footer Section

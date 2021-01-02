@@ -69,7 +69,7 @@ const ContactSection = () => (
             <form
               action="#"
               method="POST"
-              className="grid grid-cols-1 row-gap-6"
+              className="grid grid-cols-1 gap-y-6"
             >
               <div>
                 <label for="full_name" className="sr-only">
