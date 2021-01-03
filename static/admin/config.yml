@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-# local_backend: true
+local_backend: true
 
 media_folder: static/images
 public_folder: /images
@@ -25,11 +25,11 @@ collections:
               default: HomePage,
             }
           - { label: Slug, name: slug, widget: hidden, default: "" }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Title, name: title, widget: string }
-          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: Immagine Principale, name: featuredImage, widget: image }
+          - { label: Titolo, name: title, widget: string }
+          - { label: Sottotitolo, name: subtitle, widget: string, required: false }
           - {
-              label: Blurbs,
+              label: Sezioni Focus,
               name: blurbs,
               widget: list,
               fields:
@@ -40,13 +40,22 @@ collections:
                 ],
             }
           - {
-              label: listino,
-              name: listino,
+              label: Listino Prezzi,
+              name: prices,
               widget: list,
               fields:
                 [
-                  { label: Title, name: title, widget: text },
-                  { label: Price, name: body, widget: text },
+                  { label: Titolo, name: category, widget: string },
+                  {
+                    label: Prezzi,
+                    name: entries,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Prodotto, name: label, widget: string },
+                        { label: Prezzo, name: price, widget: number },
+                      ],
+                  },
                 ],
             }
           # Footer Section
@@ -65,19 +74,19 @@ collections:
                         {
                           label: Enter Facebook URL,
                           name: facebook,
-                          widget: text,
+                          widget: string,
                           required: false,
                         },
                         {
                           label: Enter Instagram URL,
                           name: instagram,
-                          widget: text,
+                          widget: string,
                           required: false,
                         },
                         {
                           label: Enter Twitter URL,
                           name: twitter,
-                          widget: text,
+                          widget: string,
                           required: false,
                         },
                       ],
