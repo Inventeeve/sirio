@@ -22,10 +22,10 @@ const FeaturesSection = ({ blurbs }) => (
         <div className="mt-10">
           <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {/* Blurbs */}
-            {blurbs.map(blurb => (
-              <li className="rounded-lg shadow-lg mt-10 md:mt-0">
+            {blurbs.map((blurb, key) => (
+              <li className="rounded-lg shadow-lg mt-10 md:mt-0" key={key}>
                 <div className="flex">
-                  <li className="mt-10 md:mt-0 w-full">
+                  <div className="mt-10 md:mt-0 w-full">
                     <div className="h-64 max-w-sm w-full lg:max-w-full lg:flex">
                       <div
                         className="h-64 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
@@ -46,7 +46,7 @@ const FeaturesSection = ({ blurbs }) => (
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </div>
                 </div>
               </li>
             ))}

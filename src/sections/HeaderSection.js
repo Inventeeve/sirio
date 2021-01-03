@@ -24,14 +24,15 @@ const HeaderSection = ({ data }) => (
           <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
               <div className="hidden md:block md:ml-10 md:pr-4">
-                {Nav.map(nav => (
+                {Nav.map((nav, key) => (
                   <a
                     href={nav.link}
                     className={`${
                       nav.type === "accent"
                         ? `text-pink-600 hover:text-pink-900`
                         : `text-gray-500 hover:text-gray-900`
-                    } mr-8 font-medium transition duration-150 ease-in-out`}
+										} mr-8 font-medium transition duration-150 ease-in-out`}
+										key={key}
                   >
                     {nav.label}
                   </a>
@@ -73,15 +74,16 @@ const HeaderSection = ({ data }) => (
                   </div>
                 </div>
                 <div className="px-2 pt-2 pb-3">
-                  {Nav.map((nav, index) => (
+                  {Nav.map((nav, key) => (
                     <a
                       href={nav.link}
-                      className={`${index > 1 && "mt-1"} ${
+                      className={`${key > 1 && "mt-1"} ${
                         nav.type === "accent"
                           ? `text-pink-600 bg-gray-50 hover:bg-gray-100 hover:text-pink-700 focus:bg-gray-100 focus:text-pink-700 `
                           : `text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:text-gray-900 focus:bg-gray-50 `
                       } focus:outline-none block px-3 py-2 rounded-md text-base font-medium  transition duration-150 ease-in-out`}
-                      role="menuitem"
+											role="menuitem"
+											key={key}
                     >
                       {nav.label}
                     </a>
