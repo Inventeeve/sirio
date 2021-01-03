@@ -5,12 +5,13 @@ featuredImage: /images/uby-yanes-hopbxvvcw6k-unsplash.jpg
 title: Sirio
 subtitle: la stella del benessere
 blurbs:
-  - title: Test Blurb Title
-    body: Test Blurb Body
-    image: /images/engin-akyurt-zbzydbon7fg-unsplash.jpg
-  - title: This is another Blurb
-    body: Wow, another Blurb body
-    image: /images/uby-yanes-hopbxvvcw6k-unsplash.jpg
+  - title: no cell
+    body: Il trattamento corpo Anti-Cellulit e Anti-Age per combattere cellulite ed
+      invecchiamento cutaneo.
+    image: /images/01b.jpg
+  - title: age lumina
+    body: La linea ad azione illuminante, anti-eta' e macchie pigmentarie.
+    image: /images/02b.jpg
 prices:
   - category: Trattamenti Corpo
     entries:
