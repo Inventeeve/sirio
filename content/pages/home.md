@@ -8,19 +8,25 @@ blurbs:
   - title: no cell
     body: Il trattamento corpo Anti-Cellulit e Anti-Age per combattere cellulite ed
       invecchiamento cutaneo.
-    image: /images/01b.jpg
+    image: /images/06-removebg-preview.png
   - title: age lumina
     body: La linea ad azione illuminante, anti-eta' e macchie pigmentarie.
-    image: /images/02b.jpg
+    image: /images/07-removebg-preview.png
 prices:
   - category: Trattamenti Corpo
     entries:
       - label: Trattamento pelle di seta
         price: 35
+      - label: Punti neri
+        price: 10
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
         price: 35
+  - category: Trattamenti vari
+    entries:
+      - label: Test
+        price: 20
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77

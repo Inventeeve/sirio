@@ -24,19 +24,19 @@ const FeaturesSection = ({ blurbs }) => (
           <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {/* Blurbs */}
             {blurbs.map((blurb, key) => (
-              <li className="rounded-lg border-2 border-pink-500 mt-10 md:mt-0" key={key}>
+              <li className="rounded-lg shadow-md mt-10 md:mt-0" key={key}>
                 <div className="flex">
                   <div className="mt-10 md:mt-0 w-full">
                     <div className="h-64 max-w-sm w-full lg:max-w-full lg:flex">
                       <div
-                        className="bg-cover bg-center h-64 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                        className="bg-cover bg-center h-64 bg-pink-50 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                         style={{
                           backgroundImage: `url(${blurb.image})`,
                         }}
                         title="Woman holding a mug"
                       ></div>
                       {/* <div className="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-200 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"> */}
-                      <div className="w-full bg-gray-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                      <div className="w-full rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
                           <div className="text-gray-900 font-bold text-xl mb-2">
                             {blurb.title}
