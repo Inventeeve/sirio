@@ -29,7 +29,7 @@ const FeaturesSection = ({ blurbs }) => (
                   <div className="mt-10 md:mt-0 w-full">
                     <div className="h-64 max-w-sm w-full lg:max-w-full lg:flex">
                       <div
-                        className="bg-cover bg-center h-64 bg-pink-50 lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                        className="bg-cover bg-center h-64 bg-pink-50 lg:h-auto lg:w-64 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                         style={{
                           backgroundImage: `url(${blurb.image})`,
                         }}

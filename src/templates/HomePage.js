@@ -1,31 +1,6 @@
 import React from "react"
-import { graphql } from 'gatsby';
-import FeaturesSection from "../sections/FeaturesSection"
-import HeaderSection from "../sections/HeaderSection"
-import PricingSection from "../sections/PricingSection"
-import FooterSection from "../sections/FooterSection"
-import ContactSection from "../sections/ContactSection"
-import SocialSection from "../sections/SocialSection"
-
-export const HomePageTemplate = ({
-  title,
-  subtitle,
-  blurbs,
-  featuredImage,
-	prices,
-	social
-}) => (
-  <div>
-    <HeaderSection data={{ title, subtitle, featuredImage, prices, social }} />
-    <div className="container mx-auto">
-      <FeaturesSection blurbs={blurbs} />
-      <PricingSection prices={prices} />
-      <SocialSection />
-      <ContactSection />
-      <FooterSection social={social} />
-    </div>
-  </div>
-)
+import { graphql } from "gatsby"
+import HomePageTemplate from './HomePageTemplate';
 
 const HomePage = ({ data: { page } }) => {
   const {

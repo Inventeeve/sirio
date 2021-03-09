@@ -84,7 +84,10 @@ const PricingSections = ({ prices }) => (
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
           {prices.map((entry, key) => (
-            <div className="rounded-lg shadow-lg divide-y divide-gray-200" key={key}>
+            <div
+              key={key}
+              className="rounded-lg shadow-lg divide-y divide-gray-200"
+            >
               <div className="p-6">
                 <h2 className="text-lg leading-6 font-medium text-gray-900">
                   {entry.category}
