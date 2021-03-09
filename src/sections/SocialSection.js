@@ -1,5 +1,5 @@
-import { StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 
 const SocialSection = () => {
@@ -20,9 +20,7 @@ const SocialSection = () => {
                 caption
                 localFile {
                   childImageSharp {
-                    fluid(maxHeight: 220) {
-                      ...GatsbyImageSharpFluid_noBase64
-                    }
+                    gatsbyImageData(layout: FULL_WIDTH)
                   }
                 }
               }
@@ -49,44 +47,41 @@ const SocialSection = () => {
               </div>
               <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
                 {data.allInstaNode.edges.map(({ node }) => {
-									const { timestamp, localFile, caption } = node;
-									const _date = new Date(timestamp)
-									const date = new Intl.DateTimeFormat('it-IT', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(timestamp * 1000);
+                  const { timestamp, localFile, caption } = node
+                  // const _date = new Date(timestamp)
+                  const date = new Intl.DateTimeFormat("it-IT", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  }).format(timestamp * 1000)
 
                   return (
                     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                       <div className="flex-shrink-0">
-                        <Img
+                        <GatsbyImage
                           className="h-64 w-full object-cover"
-                          fluid={localFile.childImageSharp.fluid}
+                          image={localFile.childImageSharp.gatsbyImageData}
                         />
                       </div>
                       <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                         <div className="flex-1">
                           <p className="text-sm leading-5 font-medium text-indigo-600">
-                            <a href="#" className="hover:underline">
+                            <a href="/#" className="hover:underline">
                               instagram
                             </a>
                           </p>
-                          <a href="#" className="block">
+                          <a href="/#" className="block">
                             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                               {caption}
                             </h3>
                           </a>
                         </div>
                         <div className="mt-6 flex items-center">
-                          <div className="flex-shrink-0">
-                            {/* <a href="#">
-                              <img
-                                className="h-10 w-10 rounded-full"
-                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt=""
-                              />
-                            </a> */}
-                          </div>
+                          <div className="flex-shrink-0"></div>
                           <div className="ml-3">
                             <p className="text-sm leading-5 font-medium text-gray-900">
-                              <a href="#" className="hover:underline">
+                              <a href="/#" className="hover:underline">
                                 sirio.stelladelbenessere
                               </a>
                             </p>

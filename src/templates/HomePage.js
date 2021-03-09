@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby';
 import FeaturesSection from "../sections/FeaturesSection"
 import HeaderSection from "../sections/HeaderSection"
 import PricingSection from "../sections/PricingSection"

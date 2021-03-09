@@ -6,7 +6,7 @@ const FooterSection = ({ social }) => (
       <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">
           {social?.facebook !== "null" && (
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Facebook</span>
               <svg
                 className="h-6 w-6"
@@ -23,7 +23,7 @@ const FooterSection = ({ social }) => (
             </a>
           )}
           {social?.instagram !== "null" && (
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="#/" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Instagram</span>
               <svg
                 className="h-6 w-6"
@@ -40,7 +40,7 @@ const FooterSection = ({ social }) => (
             </a>
           )}
           {social?.twitter && (
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/#" className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">Twitter</span>
               <svg
                 className="h-6 w-6"
