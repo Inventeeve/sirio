@@ -17,8 +17,8 @@ prices:
     entries:
       - label: Trattamento pelle di seta
         price: 35
-      - label: Punti neri
-        price: 10
+      - label: Trattamento pelle di seta con Thermalie
+        price: 55
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
