@@ -27,6 +27,10 @@ prices:
         price: 60
       - label: Massaggio relax parziale mezz'ora
         price: 30
+      - label: Rituale spa con thermalie
+        price: 55
+      - label: Thermalie bagno di vapore con sale marino
+        price: 40
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
