@@ -65,6 +65,12 @@ prices:
         price: 19
       - label: Depilazione braccia
         price: 15
+      - label: Depilazione inguine/ascelle/glutei
+        price: 7
+      - label: Depilazione baffetti/sopracciglia
+        price: 4
+      - label: Depilazione petto/schiena
+        price: 21
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
