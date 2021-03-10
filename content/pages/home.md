@@ -27,7 +27,7 @@ prices:
         price: 60
       - label: Massaggio relax parziale mezz'ora
         price: 30
-      - label: Rituale spa con thermalie
+      - label: Rituale spa con thermalie da 55€ a 85€
         price: 55
       - label: Thermalie bagno di vapore con sale marino
         price: 40
