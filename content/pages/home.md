@@ -31,6 +31,10 @@ prices:
         price: 55
       - label: Thermalie bagno di vapore con sale marino
         price: 40
+      - label: Pressoterapia
+        price: 35
+      - label: R.E.M. ultrasuoni
+        price: 45
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
