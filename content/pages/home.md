@@ -38,7 +38,9 @@ prices:
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
-        price: 35
+        price: 38
+      - label: Trattamento olos age
+        price: 56
   - category: Trattamenti vari
     entries:
       - label: Test
