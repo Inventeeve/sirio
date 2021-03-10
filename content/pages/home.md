@@ -41,6 +41,12 @@ prices:
         price: 38
       - label: Trattamento olos age
         price: 56
+      - label: Trattamento filler
+        price: 80
+      - label: Trattamento acido glicolico
+        price: 55
+      - label: Trattamento age energy
+        price: 56
   - category: Trattamenti vari
     entries:
       - label: Test
