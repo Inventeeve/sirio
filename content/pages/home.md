@@ -55,10 +55,16 @@ prices:
         price: 60
       - label: Trattamento liftante
         price: 60
-  - category: Trattamenti vari
+  - category: Depilazione
     entries:
-      - label: Test
-        price: 20
+      - label: Depilazione gambe+inguine
+        price: 28
+      - label: Depilazione parziale
+        price: 17
+      - label: Depilazione parziale+inguine
+        price: 19
+      - label: Depilazione braccia
+        price: 15
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
