@@ -21,6 +21,12 @@ prices:
         price: 55
       - label: Trattamento riducente no cell
         price: 55
+      - label: Trattamento tonic up
+        price: 45
+      - label: Massaggio relax total body 1 ora
+        price: 60
+      - label: Massaggio relax parziale mezz'ora
+        price: 30
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
