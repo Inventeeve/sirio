@@ -47,6 +47,14 @@ prices:
         price: 55
       - label: Trattamento age energy
         price: 56
+      - label: Trattamento calming/couperose
+        price: 45
+      - label: Trattamento purificante acne
+        price: 45
+      - label: Trattamento elisir di giovinezza
+        price: 60
+      - label: Trattamento liftante
+        price: 60
   - category: Trattamenti vari
     entries:
       - label: Test
