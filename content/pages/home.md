@@ -19,6 +19,8 @@ prices:
         price: 35
       - label: Trattamento pelle di seta con Thermalie
         price: 55
+      - label: Trattamento riducente no cell
+        price: 56
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
