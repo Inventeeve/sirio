@@ -71,6 +71,9 @@ prices:
         price: 4
       - label: Depilazione petto/schiena
         price: 21
+  - category: "4"
+  - category: "5"
+  - category: "6"
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
