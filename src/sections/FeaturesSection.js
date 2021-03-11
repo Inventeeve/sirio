@@ -21,7 +21,7 @@ const FeaturesSection = ({ blurbs }) => (
           </p>
         </div>
 
-        <div className="mt-10">
+        <div className="py-12">
           <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {/* Blurbs */}
             {blurbs.map((blurb, key) => (
@@ -30,7 +30,7 @@ const FeaturesSection = ({ blurbs }) => (
                   <div className="mt-10 md:mt-0 w-full">
                     <div className="h-64 max-w-sm w-full lg:max-w-full lg:flex">
                       <div
-                        className="bg-cover bg-center h-64 bg-pink-50 lg:h-auto lg:w-64 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                        className="bg-cover bg-center bg-gray-50 h-64 lg:h-auto lg:w-64 flex-none rounded-t lg:rounded-t-none lg:rounded-l text-center"
                         style={{
                           backgroundImage: `url(${blurb.image})`,
                         }}

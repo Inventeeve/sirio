@@ -56,7 +56,7 @@ import React from "react"
 const PricingSections = ({ prices }) => (
   <>
     <div className="bg-white">
-      <div className="max-w-screen-xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-4xl leading-none font-extrabold text-gray-900 sm:text-center">
             Listino Prezzi
@@ -95,7 +95,7 @@ const PricingSections = ({ prices }) => (
                   type="button"
                   className="mt-8 w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm leading-5 font-semibold text-white hover:bg-gray-700 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out"
                 >
-                  Prenota ora
+                  Chiedi informazioni
                 </button>
               </div>
               <div className="pt-6 pb-8 px-6">
