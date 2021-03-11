@@ -11,7 +11,7 @@ const HeaderSection = ({ data }) => (
   <>
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 pb-8 bg-white lg:max-w-2xl lg:w-full">
           <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
@@ -93,16 +93,21 @@ const HeaderSection = ({ data }) => (
             </div>
           </div>
 
-          <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="mt-20 mx-auto max-w-screen-xl px-4">
             <div className="sm:text-center lg:text-left">
-              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+              <img
+                className="mt-4 max-h-48 text-gray-500 mb-4"
+                src="/images/logo_text.png"
+              />
+              {/* <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                 {data.title}
                 <br />
-              </h2>
-              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-pink-600 sm:text-4xl sm:leading-none md:text-4xl">
+              </h2> */}
+              {/* <img className="h-64" src="/images/logo_text.png" /> */}
+              {/* <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-pink-600 sm:text-4xl sm:leading-none md:text-4xl">
                 {data.subtitle}
-              </h2>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              </h2> */}
+              <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Sirio la stella del benessere e' un centro estetico sito in
                 Cogliate specializzato in diverse tipologie di trattamenti
                 estetici, personalizzati ed avanzati.
@@ -131,7 +136,7 @@ const HeaderSection = ({ data }) => (
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          className="h-56 w-full object-scale-down sm:h-72 md:h-96 lg:w-full lg:h-full"
           src={data.featuredImage}
           alt=""
         />

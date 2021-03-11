@@ -1,7 +1,7 @@
 ---
 template: HomePage
 slug: /
-featuredImage: /images/uby-yanes-hopbxvvcw6k-unsplash.jpg
+featuredImage: /images/logo.png
 title: Sirio
 subtitle: la stella del benessere
 blurbs:

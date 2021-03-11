@@ -67,20 +67,6 @@ const PricingSections = ({ prices }) => (
             veritatis blanditiis laboriosam! Provident explicabo quis nihil
             natus ad. Optio laudantium animi natus!
           </p>
-          {/* <div className="relative self-center mt-6 bg-gray-100 rounded-lg p-0.5 flex sm:mt-8">
-            <button
-              type="button"
-              className="relative w-1/2 bg-white border-gray-200 rounded-md shadow-sm py-2 text-sm leading-5 font-medium text-gray-700 whitespace-nowrap hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue focus:z-10 active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150 sm:w-auto sm:px-8"
-            >
-              Listino 1
-            </button>
-            <button
-              type="button"
-              className="relative w-1/2 border border-transparent rounded-md py-2 text-sm leading-5 font-medium text-gray-700 whitespace-nowrap hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue focus:z-10 active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150 sm:w-auto sm:px-8"
-            >
-              Listino 2
-            </button>
-          </div> */}
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-4">
           {prices.map((entry, key) => (
@@ -96,9 +82,14 @@ const PricingSections = ({ prices }) => (
                   <p className="mt-4 text-sm leading-5 text-gray-500">
                     A partire da soli
                   </p>
-                  <span className="text-4xl leading-10 font-extrabold text-gray-900">
-                    {Math.min(...entry.entries.map(e => parseFloat(e.price)))}€
-                  </span>
+                  {entry.entries ? (
+                    <span className="text-4xl leading-10 font-extrabold text-gray-900">
+                      {Math.min(...entry.entries.map(e => parseFloat(e.price)))}
+                      €
+                    </span>
+                  ) : (
+                    <span className="text-4xl text-red-500">€</span>
+                  )}
                 </div>
                 <button
                   type="button"
@@ -112,31 +103,37 @@ const PricingSections = ({ prices }) => (
                   Listino completo
                 </h3>
                 <ul className="mt-6 space-y-4">
-                  {entry.entries.map((entry, key) => (
-                    <li key={key}>
-                      <span className="flex space-x-3">
-                        <svg
-                          className="flex-shrink-0 h-5 w-5 text-green-500"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <div className="text-sm leading-5 text-gray-500">
-                          {entry.label}
+                  {entry.entries ? (
+                    entry.entries.map((entry, key) => (
+                      <li key={key}>
+                        <span className="flex space-x-3">
+                          <svg
+                            className="flex-shrink-0 h-5 w-5 text-green-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <div className="text-sm leading-5 text-gray-500">
+                            {entry.label}
+                          </div>
+                        </span>
+                        <div className="ml-8 text-sm leading-5 font-extrabold text-gray-500">
+                          {entry.price}€
                         </div>
-                      </span>
-                      <div className="ml-8 text-sm leading-5 font-extrabold text-gray-500">
-                        {entry.price}€
-                      </div>
-                    </li>
-                  ))}
+                      </li>
+                    ))
+                  ) : (
+                    <div className="text-red-500">
+                      Add a price for this category
+                    </div>
+                  )}
                 </ul>
               </div>
             </div>
