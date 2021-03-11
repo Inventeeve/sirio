@@ -14,7 +14,7 @@ const HeaderSection = ({ data }) => (
         <div className="relative z-10 pb-8 bg-white">
           <div className="relative pt-6 sm:px-6 lg:px-8 w-full mx-auto">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-              <div className="hidden md:block md:ml-10 md:pr-4">
+              <div className="hidden md:block md:ml-10 md:pr-4 w-full text-center">
                 {Nav.map((nav, key) => (
                   <a
                     key={key}
@@ -23,7 +23,7 @@ const HeaderSection = ({ data }) => (
                       nav.type === "accent"
                         ? `text-pink-600 hover:text-pink-900`
                         : `text-gray-500 hover:text-gray-900`
-                    } mx-4d font-medium transition duration-150 ease-in-out`}
+                    } mx-4 font-medium transition duration-150 ease-in-out`}
                   >
                     {nav.label}
                   </a>
