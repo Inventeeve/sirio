@@ -10,18 +10,9 @@ const Nav = [
 const HeaderSection = ({ data }) => (
   <>
     <div className="relative bg-white overflow-hidden">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white lg:max-w-2xl lg:w-full">
-          <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-
-          <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl justify-center mx-auto">
+        <div className="relative z-10 pb-8 bg-white">
+          <div className="relative pt-6 sm:px-6 lg:px-8 w-full mx-auto">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
               <div className="hidden md:block md:ml-10 md:pr-4">
                 {Nav.map((nav, key) => (
@@ -32,7 +23,7 @@ const HeaderSection = ({ data }) => (
                       nav.type === "accent"
                         ? `text-pink-600 hover:text-pink-900`
                         : `text-gray-500 hover:text-gray-900`
-                    } mr-8 font-medium transition duration-150 ease-in-out`}
+                    } mx-4d font-medium transition duration-150 ease-in-out`}
                   >
                     {nav.label}
                   </a>
@@ -93,21 +84,13 @@ const HeaderSection = ({ data }) => (
             </div>
           </div>
 
-          <main className="mt-20 mx-auto max-w-screen-xl px-4">
+          <main className="mt-20 mx-auto max-w-screen-xl px-4 flex justify-between">
             <div className="sm:text-center lg:text-left">
               <img
-                className="mt-4 max-h-48 text-gray-500 mb-4"
+                className="mt-4 w-1/3 text-gray-500 mb-12"
                 src="/images/logo_text.png"
               />
-              {/* <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                {data.title}
-                <br />
-              </h2> */}
-              {/* <img className="h-64" src="/images/logo_text.png" /> */}
-              {/* <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-pink-600 sm:text-4xl sm:leading-none md:text-4xl">
-                {data.subtitle}
-              </h2> */}
-              <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                 Sirio la stella del benessere e' un centro estetico sito in
                 Cogliate specializzato in diverse tipologie di trattamenti
                 estetici, personalizzati ed avanzati.
@@ -131,15 +114,9 @@ const HeaderSection = ({ data }) => (
                 </div>
               </div>
             </div>
+            <img className="w-1/3" src={data.featuredImage} alt="" />
           </main>
         </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-scale-down sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src={data.featuredImage}
-          alt=""
-        />
       </div>
     </div>
   </>
