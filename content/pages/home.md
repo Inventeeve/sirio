@@ -95,7 +95,20 @@ prices:
         price: 17
       - label: Trucco sposa cerimonia
         price: 75
-  - category: "6"
+  - category: Trucco semipermanente
+    entries:
+      - label: Ricostruzione sopracciglia
+        price: 299
+      - label: Eyeliner
+        price: 300
+      - label: Infracigliare
+        price: 200
+      - label: Bocca+contorno+sfumatura
+        price: 350
+      - label: Riempimento labbra
+        price: 450
+      - label: Copertura cicatrici
+        price: 0
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
