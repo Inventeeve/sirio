@@ -108,7 +108,7 @@ prices:
       - label: Riempimento labbra
         price: 450
       - label: Copertura cicatrici
-        price: 0
+        price: 10
 footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
