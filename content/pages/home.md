@@ -87,7 +87,14 @@ prices:
         price: 30
       - label: Semipermanente con rinforzo
         price: 25
-  - category: "5"
+  - category: Trucco viso
+    entries:
+      - label: Trucco giorno/sera
+        price: 22
+      - label: Prova trucco sposa
+        price: 17
+      - label: Trucco sposa cerimonia
+        price: 75
   - category: "6"
 footer:
   social:
