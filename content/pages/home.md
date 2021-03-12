@@ -71,7 +71,22 @@ prices:
         price: 4
       - label: Depilazione petto/schiena
         price: 21
-  - category: "4"
+  - category: MANICURE-PEDICURE
+    entries:
+      - label: Manicure
+        price: 12
+      - label: Pedicure estetico
+        price: 20
+      - label: Pedicure curativo+estetico
+        price: 30
+      - label: Smalto semipermanente
+        price: 20
+      - label: Ricostruzione unghie in gel
+        price: 60
+      - label: Refil
+        price: 30
+      - label: Semipermanente con rinforzo
+        price: 25
   - category: "5"
   - category: "6"
 footer:
