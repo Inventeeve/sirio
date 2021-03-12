@@ -98,7 +98,7 @@ prices:
   - category: Trucco semipermanente
     entries:
       - label: Ricostruzione sopracciglia
-        price: 299
+        price: 300
       - label: Eyeliner
         price: 300
       - label: Infracigliare
