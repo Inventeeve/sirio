@@ -1,58 +1,5 @@
 import React from "react"
 
-// const Listino = [
-//   {
-//     category: "Trattamenti Corpo",
-//     entries: [
-//       { label: "Trattamento pelle di seta", price: 35 },
-//       { label: "Trattamento pelle di seta con Thermalie", price: 55 },
-//       { label: "Trattamento riducente no cell", price: 55 },
-//       { label: "Trattamento tonic-up", price: 45 },
-//       { label: "Massaggio relax total body (1 ora)", price: 60 },
-//       { label: "Massaggio relax parziale (mezz'ora)", price: 30 },
-//       { label: "Rituale spa con thermalie", price: 55 },
-//       { label: "Thermalie bagno di vapore con sale marino", price: 40 },
-//       { label: "Pressoterapia", price: 35 },
-//       { label: "R.E.M. ultrasuoni", price: 45 },
-//     ],
-//   },
-//   {
-//     category: "Trattamenti Viso",
-//     entries: [
-//       { label: "Pulizia viso profonda", price: "38" },
-//       { label: "Trattamento olos age", price: "56" },
-//       { label: "Trattamento filler", price: "72" },
-//       { label: "Trattamento acido glicolico", price: "55" },
-//       { label: "Trattamento age energy", price: "56" },
-//       { label: "Trattamento calming/couperose", price: "42" },
-//       { label: "Trattamento purificante acne", price: "42" },
-//     ],
-//   },
-//   {
-//     category: "Depilazione",
-//     entries: [
-//       { label: "Depilazione gambe + inguine", price: "28" },
-//       { label: "Depilazione parziale", price: "17,50" },
-//       { label: "Depilazione parziale + inguine", price: "19,50" },
-//       { label: "Depilazione braccia", price: "15,50" },
-//       { label: "Depilazione inguine/ascelle/glutei", price: "7,50" },
-//       { label: "Depilazione baffetti/sopracciaglia", price: "4" },
-//       { label: "Depilazione petto/schiena", price: "21" },
-//     ],
-//   },
-//   {
-//     category: "Manicure",
-//     entries: [
-//       { label: "Manicure", price: "12,50" },
-//       { label: "Pedicure estetico", price: "17,50" },
-//       { label: "Pedicure curativo + estetico", price: "30" },
-//       { label: "Smalto semipermanente", price: "20" },
-//       { label: "Ricostruzione unghie in gel", price: "50" },
-//       { label: "Refil", price: "40" },
-//     ],
-//   },
-// ]
-
 const PricingSections = ({ prices }) => (
   <>
     <div className="bg-white">
