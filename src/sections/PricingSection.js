@@ -7,7 +7,7 @@ const MinMaxPrice = ({ entries }) => {
 
   if (entries) {
     return (
-      <div className="text-lg text-gray-500 flex items-center">
+      <div className="text-md font-light text-gray-500 flex items-center">
         <span>{minPrice} €</span>
         <MinusIcon className="w-4 mx-2 text-gray-400" />
         <span>{maxPrice} €</span>
@@ -40,18 +40,12 @@ const PricingSections = ({ prices }) => (
               className="rounded-lg shadow-lg divide-y divide-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-lg leading-6 text-pink-600 font-extrabold tracking-wide capitalize">
+                <h2 className="text-xl leading-6 text-gray-900 font-extrabold tracking-wide capitalize">
                   {entry.category.toLowerCase()}
                 </h2>
                 <div className="mt-4 flex space-x-3 flex items-center">
                   <MinMaxPrice entries={entry.entries} />
                 </div>
-                {/* <button
-                  type="button"
-                  className="mt-8 w-full bg-gray-800 border border-gray-800 rounded-md py-2 text-sm leading-5 font-semibold text-white hover:bg-gray-700 focus:outline-none focus:shadow-outline-gray transition duration-150 ease-in-out"
-                >
-                  Chiedi informazioni
-                </button> */}
               </div>
               <div className="p-6">
                 <ul className="space-y-4">
@@ -60,7 +54,7 @@ const PricingSections = ({ prices }) => (
                       <li key={key}>
                         <span className="flex space-x-3">
                           <svg
-                            className="flex-shrink-0 h-5 w-5 text-green-500"
+                            className="flex-shrink-0 h-5 w-5 text-pink-500"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"

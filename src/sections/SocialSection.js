@@ -65,7 +65,7 @@ const SocialSection = () => {
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                      <p className="text-sm leading-5 font-medium text-indigo-600 flex items-center">
+                      <p className="text-sm leading-5 font-medium text-pink-600 flex items-center">
                         <InstagramIcon className="h-6 w-6 mr-2" />
                         <a
                           href={`https://instagram.com/p/${id}`}
@@ -83,7 +83,7 @@ const SocialSection = () => {
                     </div>
                     <div className="mt-6 flex items-center">
                       <div className="flex-shrink-0"></div>
-                      <div className="text-right w-full">
+                      <div>
                         <p className="text-sm leading-5 font-medium text-gray-900">
                           sirio.stelladelbenessere
                         </p>
