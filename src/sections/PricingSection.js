@@ -20,7 +20,7 @@ const MinMaxPrice = ({ entries }) => {
 
 const PricingSections = ({ prices }) => (
   <>
-    <div className="bg-white">
+    <div className="bg-white" id="prices">
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-4xl leading-none font-extrabold text-gray-900 sm:text-center">

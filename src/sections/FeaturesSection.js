@@ -3,7 +3,7 @@ import ReactMarkdow from "react-markdown"
 
 const FeaturesSection = ({ blurbs }) => (
   <>
-    <div className="py-12 bg-white">
+    <div className="py-12 bg-white" id="blurbs">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           {/* <img className="mt-4 max-h-48 text-gray-500 lg:mx-auto mb-10" src="/images/logo_text.png" /> */}

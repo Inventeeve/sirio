@@ -2,10 +2,10 @@ import React from "react"
 import logo from "../images/logo-sirio.png"
 
 const Nav = [
-  { label: "Chi siamo", link: "#", type: "standard" },
-  { label: "Cosa facciamo", link: "#", type: "standard" },
-  { label: "Listino prezzi", link: "#", type: "standard" },
-  { label: "Contattaci", link: "#", type: "accent" },
+  // { label: "Chi siamo", link: "#", type: "standard" },
+  { label: "I nostri trattamenti", link: "#blurbs", type: "standard" },
+  { label: "Listino prezzi", link: "#prices", type: "standard" },
+  { label: "Contattaci", link: "#contacts", type: "accent" },
 ]
 
 const HeaderSection = ({ data }) => (
@@ -102,7 +102,7 @@ const HeaderSection = ({ data }) => (
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="/#"
+                    href="#blurbs"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Scopri di più
@@ -110,7 +110,7 @@ const HeaderSection = ({ data }) => (
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="/#"
+                    href="#contacts"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-pink-700 bg-pink-100 hover:text-pink-600 hover:bg-pink-50 focus:outline-none focus:shadow-outline-green focus:border-pink-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Contattaci
