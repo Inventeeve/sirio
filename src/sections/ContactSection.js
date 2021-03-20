@@ -66,19 +66,21 @@ const ContactSection = () => (
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-12 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
+            {/* Contact Form */}
             <form
-              name="contact-form"
-              method="POST"
               className="grid grid-cols-1 gap-y-6"
-              netlify
+              name="contact-form"
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
             >
               <div>
-                <label htmlFor="full_name" className="sr-only">
+                <label htmlFor="name" className="sr-only">
                   Nome
                 </label>
                 <div className="relative rounded-md shadow-sm">
                   <input
-                    id="full_name"
+                    id="name"
                     name="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Nome"
@@ -126,19 +128,18 @@ const ContactSection = () => (
                   ></textarea>
                 </div>
               </div>
+              <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact-form" />
-              <div className="">
-                <span className="inline-flex rounded-md shadow-sm">
-                  <button
-                    type="submit"
-                    className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition duration-150 ease-in-out"
-                  >
-                    Invia il tuo messaggio
-                  </button>
-                </span>
+              <div className="inline-flex rounded-md shadow-sm">
+                <input
+                  type="submit"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition duration-150 ease-in-out"
+                >
+                  Invia il tuo messaggio
+                </input>
               </div>
             </form>
-            <form
+            {/* <form
               method="post"
               netlify-honeypot="bot-field"
               data-netlify="true"
@@ -150,7 +151,7 @@ const ContactSection = () => (
 							<input type="text" name="surname" id="surname"></input>
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
-            </form>
+            </form> */}
           </div>
         </div>
       </div>
