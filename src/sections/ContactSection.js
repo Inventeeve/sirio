@@ -133,25 +133,11 @@ const ContactSection = () => (
               <div className="inline-flex rounded-md shadow-sm">
                 <input
                   type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition duration-150 ease-in-out"
-                >
-                  Invia il tuo messaggio
-                </input>
+                  className="inline-flex justify-center py-3 px-6 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-pink-600 hover:bg-pink-500 focus:outline-none focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 transition duration-150 ease-in-out cursor-pointer"
+									value="Invia il tuo messaggio"
+                />
               </div>
             </form>
-            {/* <form
-              method="post"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-              name="contact"
-            >
-							<label>Name</label>
-							<input type="text" name="name" id="name"></input>
-							<label>Surname</label>
-							<input type="text" name="surname" id="surname"></input>
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
-            </form> */}
           </div>
         </div>
       </div>

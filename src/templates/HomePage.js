@@ -12,8 +12,6 @@ const HomePage = ({ data: { page, instagram } }) => {
     footer,
   } = page.frontmatter;
 
-	// debugger
-
   return (
     <HomePageTemplate
       title={title}
@@ -22,7 +20,7 @@ const HomePage = ({ data: { page, instagram } }) => {
       featuredImage={featuredImage}
       prices={prices}
       social={footer.social}
-			instagram={instagram}
+			// instagram={instagram}
     />
   )
 }
@@ -57,24 +55,25 @@ export const pageQuery = graphql`
         }
       }
     }
-    instagram: allInstaNode(limit: 3) {
-      edges {
-        node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
-          localFile {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-        }
-      }
-    }
   }
 `
+
+// # instagram: allInstaNode(limit: 3) {
+// 	#   edges {
+// 	#     node {
+// 	#       id
+// 	#       likes
+// 	#       comments
+// 	#       mediaType
+// 	#       preview
+// 	#       original
+// 	#       timestamp
+// 	#       caption
+// 	#       localFile {
+// 	#         childImageSharp {
+// 	#           gatsbyImageData(layout: FULL_WIDTH)
+// 	#         }
+// 	#       }
+// 	#     }
+// 	#   }
+// 	# }
