@@ -66,7 +66,12 @@ const ContactSection = () => (
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-12 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form name="contact-form" method="POST" className="grid grid-cols-1 gap-y-6" netlify>
+            <form
+              name="contact-form"
+              method="POST"
+              className="grid grid-cols-1 gap-y-6"
+              netlify
+            >
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Nome
@@ -74,7 +79,7 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <input
                     id="full_name"
-										name="name"
+                    name="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Nome"
                   />
@@ -88,7 +93,7 @@ const ContactSection = () => (
                   <input
                     id="email"
                     type="email"
-										name="email"
+                    name="email"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Email"
                   />
@@ -101,7 +106,7 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <input
                     id="phone"
-										name="phone"
+                    name="phone"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Telefono"
                   />
@@ -114,14 +119,14 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <textarea
                     id="message"
-										name="message"
+                    name="message"
                     rows="4"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Testo del messaggio"
                   ></textarea>
                 </div>
               </div>
-							<input type="hidden" name="form-name" value="contact-form" />
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className="">
                 <span className="inline-flex rounded-md shadow-sm">
                   <button
@@ -132,6 +137,16 @@ const ContactSection = () => (
                   </button>
                 </span>
               </div>
+            </form>
+            <form
+              method="post"
+              action="#"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+              name="contact"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
             </form>
           </div>
         </div>
