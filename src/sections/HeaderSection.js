@@ -2,7 +2,6 @@ import React from "react"
 import logo from "../images/logo-sirio.png"
 
 const Nav = [
-  // { label: "Chi siamo", link: "#", type: "standard" },
   { label: "I nostri trattamenti", link: "#blurbs", type: "standard" },
   { label: "Listino prezzi", link: "#prices", type: "standard" },
   { label: "Contattaci", link: "#contacts", type: "accent" },
@@ -95,9 +94,7 @@ const HeaderSection = ({ data }) => (
                 {data.subtitle}
               </h2>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Sirio la stella del benessere e' un centro estetico sito in
-                Cogliate specializzato in diverse tipologie di trattamenti
-                estetici, personalizzati ed avanzati.
+                {data.description}
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

@@ -6,6 +6,7 @@ const HomePage = ({ data: { page, instagram } }) => {
   const {
     title,
     subtitle,
+		description,
     blurbs,
     featuredImage,
     prices,
@@ -16,6 +17,7 @@ const HomePage = ({ data: { page, instagram } }) => {
     <HomePageTemplate
       title={title}
       subtitle={subtitle}
+			description={description}
       blurbs={blurbs}
       featuredImage={featuredImage}
       prices={prices}
@@ -34,6 +36,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+				description
         featuredImage
         blurbs {
           image

@@ -9,6 +9,7 @@ import ContactSection from "../sections/ContactSection"
 const HomePageTemplate = ({
   title,
   subtitle,
+	description,
   blurbs,
   featuredImage,
   prices,
@@ -18,7 +19,7 @@ const HomePageTemplate = ({
   return (
     <div>
       <HeaderSection
-        data={{ title, subtitle, featuredImage, prices, social }}
+        data={{ title, subtitle, description, featuredImage, prices, social }}
       />
       <div className="container mx-auto">
         <FeaturesSection blurbs={blurbs} />
