@@ -1,5 +1,4 @@
-import MinusIcon from './MinusIcon';
+import MinusIcon from "./MinusIcon"
+import InstagramIcon from "./InstagramIcon"
 
-export {
-	MinusIcon
-}
+export { MinusIcon, InstagramIcon }

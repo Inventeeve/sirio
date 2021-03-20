@@ -7,15 +7,11 @@ const MinMaxPrice = ({ entries }) => {
 
   if (entries) {
     return (
-      <>
-        <span className="text-xl text-gray-500">
-          {minPrice} €
-        </span>
-        <MinusIcon className="w-4 mx-2 text-gray-500" />
-        <span className="text-xl text-gray-500">
-          {maxPrice} €
-        </span>
-      </>
+      <div className="text-lg text-gray-500 flex items-center">
+        <span>{minPrice} €</span>
+        <MinusIcon className="w-4 mx-2 text-gray-400" />
+        <span>{maxPrice} €</span>
+      </div>
     )
   }
 
@@ -44,10 +40,10 @@ const PricingSections = ({ prices }) => (
               className="rounded-lg shadow-lg divide-y divide-gray-200"
             >
               <div className="p-6">
-                <h2 className="text-lg leading-6 text-2xl text-gray-900 font-extrabold capitalize">
+                <h2 className="text-lg leading-6 text-pink-600 font-extrabold tracking-wide capitalize">
                   {entry.category.toLowerCase()}
                 </h2>
-                <div className="mt-8 flex space-x-3 flex items-center">
+                <div className="mt-4 flex space-x-3 flex items-center">
                   <MinMaxPrice entries={entry.entries} />
                 </div>
                 {/* <button
@@ -57,11 +53,8 @@ const PricingSections = ({ prices }) => (
                   Chiedi informazioni
                 </button> */}
               </div>
-              <div className="pt-6 pb-8 px-6">
-                <h3 className="text-xs leading-4 font-medium text-gray-900 tracking-wide uppercase">
-                  Listino completo
-                </h3>
-                <ul className="mt-6 space-y-4">
+              <div className="p-6">
+                <ul className="space-y-4">
                   {entry.entries ? (
                     entry.entries.map((entry, key) => (
                       <li key={key}>
