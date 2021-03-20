@@ -17,9 +17,9 @@ const HeaderSection = ({ data }) => (
             <nav className="relative flex justify-center items-center">
               <img className="h-20" src={logo} alt="sirio logo"/>
               <div className="hidden md:block md:ml-10 md:pr-4 text-center">
-                {Nav.map((nav, key) => (
+                {Nav.map((nav, index) => (
                   <a
-                    key={key}
+                    key={index}
                     href={nav.link}
                     className={`${
                       nav.type === "accent"
@@ -85,18 +85,6 @@ const HeaderSection = ({ data }) => (
               </div>
             </div>
           </div>
-
-          {/* <main className="mt-20 px-4 sm:px-6 lg:px-8 md:flex">
-            <div className="sm:w-full md:w-1/2 text-center sm:text-center lg:text-left">
-              <img
-                className="mt-4 w-1/2 sm:w-48 md:w-1/3 text-gray-500 mb-12 mx-auto"
-                src="/images/logo_text.png"
-              />
-              <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                Sirio la stella del benessere e' un centro estetico sito in
-                Cogliate specializzato in diverse tipologie di trattamenti
-                estetici, personalizzati ed avanzati.
-              </p> */}
           <main className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 md:flex justify-between">
             <div className="sm:text-center lg:text-left">
               <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
@@ -134,7 +122,7 @@ const HeaderSection = ({ data }) => (
               className="w-full mx-auto sm:mx-0 my-6 sm:my-0"
               style={{ maxWidth: "300px" }}
               src={data.featuredImage}
-              alt=""
+              alt="featured"
             />
           </main>
         </div>

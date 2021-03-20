@@ -13,17 +13,22 @@ const HomePageTemplate = ({
   featuredImage,
   prices,
   social,
-}) => (
-  <div>
-    <HeaderSection data={{ title, subtitle, featuredImage, prices, social }} />
-    <div className="container mx-auto">
-      <FeaturesSection blurbs={blurbs} />
-      <PricingSection prices={prices} />
-      <SocialSection />
-      <ContactSection />
-      <FooterSection social={social} />
+  instagram,
+}) => {
+  return (
+    <div>
+      <HeaderSection
+        data={{ title, subtitle, featuredImage, prices, social }}
+      />
+      <div className="container mx-auto">
+        <FeaturesSection blurbs={blurbs} />
+        <PricingSection prices={prices} />
+        <SocialSection posts={instagram} />
+        <ContactSection />
+        <FooterSection social={social} />
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default HomePageTemplate

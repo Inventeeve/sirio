@@ -42,9 +42,9 @@ const FeaturesSection = ({ blurbs }) => (
                           <div className="text-gray-900 font-bold text-xl mb-2">
                             {blurb.title}
                           </div>
-                          <p className="text-gray-700 text-base">
+                          <div className="text-gray-700 text-base">
                             <ReactMarkdow>{blurb.body}</ReactMarkdow>
-                          </p>
+                          </div>
                         </div>
                       </div>
                     </div>

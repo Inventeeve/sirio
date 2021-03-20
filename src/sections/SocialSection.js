@@ -1,33 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { InstagramIcon } from "../components/icons"
+import { v4 as uuidv4 } from "uuid"
 
-const SocialSection = () => {
-  const data = useStaticQuery(graphql`
-    query SocialsQuery {
-      allInstaNode(limit: 3) {
-        edges {
-          node {
-            id
-            likes
-            comments
-            mediaType
-            preview
-            original
-            timestamp
-            caption
-            localFile {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
+const SocialSection = ({ posts }) => {
+  if (!posts) {
+    return <p className="py-6 text-gray-500">Instagram posts</p>
+  }
   return (
     <>
       <div className="relative pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
@@ -45,9 +24,8 @@ const SocialSection = () => {
             </p>
           </div>
           <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-            {data.allInstaNode.edges.map(({ node }) => {
+            {posts.edges.map(({ node }) => {
               const { timestamp, localFile, caption, id } = node
-              // const _date = new Date(timestamp)
               const date = new Intl.DateTimeFormat("it-IT", {
                 weekday: "long",
                 year: "numeric",
@@ -56,11 +34,15 @@ const SocialSection = () => {
               }).format(timestamp * 1000)
 
               return (
-                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div
+                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                  key={uuidv4()}
+                >
                   <div className="flex-shrink-0">
                     <GatsbyImage
                       className="h-64 w-full object-cover"
                       image={localFile.childImageSharp.gatsbyImageData}
+                      alt="instagram-feed"
                     />
                   </div>
                   <div className="flex-1 bg-white p-6 flex flex-col justify-between">

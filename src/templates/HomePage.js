@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import HomePageTemplate from './HomePageTemplate';
+import HomePageTemplate from "./HomePageTemplate"
 
-const HomePage = ({ data: { page } }) => {
+const HomePage = ({ data: { page, instagram } }) => {
   const {
     title,
     subtitle,
@@ -10,7 +10,9 @@ const HomePage = ({ data: { page } }) => {
     featuredImage,
     prices,
     footer,
-  } = page.frontmatter
+  } = page.frontmatter;
+
+	// debugger
 
   return (
     <HomePageTemplate
@@ -20,6 +22,7 @@ const HomePage = ({ data: { page } }) => {
       featuredImage={featuredImage}
       prices={prices}
       social={footer.social}
+			instagram={instagram}
     />
   )
 }
@@ -50,6 +53,25 @@ export const pageQuery = graphql`
           social {
             facebook
             instagram
+          }
+        }
+      }
+    }
+    instagram: allInstaNode(limit: 3) {
+      edges {
+        node {
+          id
+          likes
+          comments
+          mediaType
+          preview
+          original
+          timestamp
+          caption
+          localFile {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
           }
         }
       }
