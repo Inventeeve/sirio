@@ -66,7 +66,7 @@ const ContactSection = () => (
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-12 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form name="contactForm" method="POST" className="grid grid-cols-1 gap-y-6" netlify>
+            <form name="contact-form" method="POST" className="grid grid-cols-1 gap-y-6" netlify>
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Nome
@@ -121,6 +121,7 @@ const ContactSection = () => (
                   ></textarea>
                 </div>
               </div>
+							<input type="hidden" name="form-name" value="contact-form" />
               <div className="">
                 <span className="inline-flex rounded-md shadow-sm">
                   <button
