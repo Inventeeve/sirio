@@ -74,6 +74,7 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <input
                     id="full_name"
+										name="name"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Nome"
                   />
@@ -87,6 +88,7 @@ const ContactSection = () => (
                   <input
                     id="email"
                     type="email"
+										name="email"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Email"
                   />
@@ -99,6 +101,7 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <input
                     id="phone"
+										name="phone"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Telefono"
                   />
@@ -111,6 +114,7 @@ const ContactSection = () => (
                 <div className="relative rounded-md shadow-sm">
                   <textarea
                     id="message"
+										name="message"
                     rows="4"
                     className="form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150"
                     placeholder="Testo del messaggio"
