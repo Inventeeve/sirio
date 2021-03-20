@@ -1,4 +1,5 @@
 import React from "react"
+import logo from "../images/logo-sirio.png"
 
 const Nav = [
   { label: "Chi siamo", link: "#", type: "standard" },
@@ -13,8 +14,9 @@ const HeaderSection = ({ data }) => (
       <div className="max-w-screen-xl justify-center mx-auto">
         <div className="relative z-10 pb-8 bg-white">
           <div className="relative pt-6 sm:px-6 lg:px-8 w-full mx-auto">
-            <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
-              <div className="hidden md:block md:ml-10 md:pr-4 w-full text-center">
+            <nav className="relative flex justify-center items-center">
+              <img className="h-20" src={logo} alt="sirio logo"/>
+              <div className="hidden md:block md:ml-10 md:pr-4 text-center">
                 {Nav.map((nav, key) => (
                   <a
                     key={key}
@@ -130,7 +132,7 @@ const HeaderSection = ({ data }) => (
             </div>
             <img
               className="w-full mx-auto sm:mx-0 my-6 sm:my-0"
-							style={{ maxWidth: '300px'}}
+              style={{ maxWidth: "300px" }}
               src={data.featuredImage}
               alt=""
             />
