@@ -6,7 +6,6 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
-    "autoprefixer": "^10.2.5",
     "gatsby": "^3.1.1",
     "gatsby-image": "^3.1.0",
     "gatsby-plugin-image": "^1.1.1",
@@ -19,20 +18,21 @@
     "gatsby-transformer-sharp": "^3.1.0",
     "netlify-cms-app": "^2.14.30",
     "netlify-cms-locales": "^1.29.0",
-    "postcss": "^8.2.8",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-markdown": "^5.0.3",
-    "tailwindcss": "^2.0.4",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "gatsby-plugin-postcss": "^4.1.0",
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-remark": "^3.1.0",
-    "prettier": "^2.2.1"
+    "postcss": "^8.2.8",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.4"
   },
   "keywords": [
     "gatsby"
