@@ -4,11 +4,9 @@ slug: /
 featuredImage: /images/logo.png
 title: Sirio
 subtitle: la stella del benessere
-description: Sirio la stella del benessere e' un centro estetico sito in Cogliate specializzato in diverse tipologie di trattamenti estetici, personalizzati ed avanzati.
 blurbs:
   - title: no cell
-    body:
-      Il trattamento corpo Anti-Cellulit e Anti-Age per combattere cellulite ed
+    body: Il trattamento corpo Anti-Cellulite e Anti-Age per combattere cellulite ed
       invecchiamento cutaneo.
     image: /images/06-removebg-preview.png
   - title: age lumina
@@ -116,4 +114,7 @@ footer:
     facebook: https://www.facebook.com/Summa.Laura.77
     instagram: https://www.instagram.com/sirio.lastelladelbenessere/
     twitter: "null"
+description: Sirio la stella del benessere e' un centro estetico sito in
+  Cogliate specializzato in diverse tipologie di trattamenti estetici,
+  personalizzati ed avanzati.
 ---
