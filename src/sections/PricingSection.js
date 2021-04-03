@@ -71,7 +71,7 @@ const PricingSections = ({ prices }) => (
                           </div>
                         </span>
                         <div className="ml-8 text-sm leading-5 font-extrabold text-gray-500">
-                          {entry.price.toFixed(2)} €
+                          {entry.price} €
                         </div>
                       </li>
                     ))

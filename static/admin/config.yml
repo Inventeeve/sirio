@@ -91,7 +91,7 @@ collections:
                     fields:
                       [
                         { label: Prodotto, name: label, widget: string },
-                        { label: Prezzo, name: price, widget: number },
+                        { label: Prezzo, name: price, widget: number, value_type: float },
                       ],
                   },
                 ],

@@ -23,9 +23,9 @@ prices:
   - category: Trattamenti Corpo
     entries:
       - label: Trattamento pelle di seta
-        price: 35
+        price: 35.99
       - label: Trattamento pelle di seta con Thermalie
-        price: 55
+        price: 54.9
       - label: Trattamento riducente no cell
         price: 55
       - label: Trattamento tonic up
