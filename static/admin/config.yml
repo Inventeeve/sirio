@@ -1,4 +1,4 @@
-locale: 'it'
+locale: "it"
 
 backend:
   name: git-gateway
@@ -29,7 +29,43 @@ collections:
           - { label: Slug, name: slug, widget: hidden, default: "" }
           - { label: Immagine Principale, name: featuredImage, widget: image }
           - { label: Titolo, name: title, widget: string }
-          - { label: Sottotitolo, name: subtitle, widget: string, required: false }
+          - {
+              label: Sottotitolo,
+              name: subtitle,
+              widget: string,
+              required: false,
+            }
+
+          - {
+              label: Messaggio focus,
+              name: focusmessage,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Data Messaggio Focus,
+                    name: messagedate,
+                    widget: "datetime",
+                    default: "",
+                    date_format: "DD.MM.YYYY",
+                    format: "L",
+                    required: false,
+                  },
+                  {
+                    label: Titolo Messaggio Focus,
+                    name: messagetitle,
+                    widget: string,
+                    required: false,
+                  },
+                  {
+                    label: Descrizione Messaggio Focus,
+                    name: messagedescription,
+                    widget: string,
+                    required: false,
+                  },
+                ],
+            }
+
           - {
               label: Sezioni Focus,
               name: blurbs,
@@ -58,6 +94,34 @@ collections:
                         { label: Prezzo, name: price, widget: number },
                       ],
                   },
+                ],
+            }
+
+          # Contacts Section
+          - {
+              label: Contatti,
+              name: contacts,
+              widget: object,
+              fields:
+                [
+                  { label: Titolo, name: contacttitle, widget: string },
+                  {
+                    label: Descrizione,
+                    name: contactdescription,
+                    widget: string,
+                  },
+                  {
+                    label: Indirizzo,
+                    name: contactaddress,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Via, name: contactstreet, widget: string },
+                        { label: Città, name: contactcity, widget: string },
+                      ],
+                  },
+                  { label: Telefono, name: contactphone, widget: string },
+                  { label: Email, name: contactemail, widget: string },
                 ],
             }
           # Footer Section

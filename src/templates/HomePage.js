@@ -6,23 +6,27 @@ const HomePage = ({ data: { page, instagram } }) => {
   const {
     title,
     subtitle,
-		description,
+    description,
+    focusmessage,
     blurbs,
     featuredImage,
     prices,
+    contacts,
     footer,
-  } = page.frontmatter;
+  } = page.frontmatter
 
   return (
     <HomePageTemplate
       title={title}
       subtitle={subtitle}
-			description={description}
+      description={description}
+      focusMessage={focusmessage}
       blurbs={blurbs}
       featuredImage={featuredImage}
       prices={prices}
+      contacts={contacts}
       social={footer.social}
-			// instagram={instagram}
+      instagram={instagram}
     />
   )
 }
@@ -36,8 +40,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
-				description
+        description
         featuredImage
+        focusmessage {
+          messagetitle
+          messagedate
+          messagedescription
+        }
         blurbs {
           image
           title
@@ -50,6 +59,16 @@ export const pageQuery = graphql`
             price
           }
         }
+        contacts {
+          contacttitle
+          contactdescription
+          contactaddress {
+            contactstreet
+            contactcity
+          }
+          contactphone
+          contactemail
+        }
         footer {
           social {
             facebook
@@ -58,25 +77,28 @@ export const pageQuery = graphql`
         }
       }
     }
+
+    instagram: allInstaNode(
+      limit: 3
+      sort: { order: DESC, fields: timestamp }
+    ) {
+      edges {
+        node {
+          id
+          likes
+          comments
+          mediaType
+          preview
+          original
+          timestamp
+          caption
+          localFile {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
+        }
+      }
+    }
   }
 `
-
-// # instagram: allInstaNode(limit: 3) {
-// 	#   edges {
-// 	#     node {
-// 	#       id
-// 	#       likes
-// 	#       comments
-// 	#       mediaType
-// 	#       preview
-// 	#       original
-// 	#       timestamp
-// 	#       caption
-// 	#       localFile {
-// 	#         childImageSharp {
-// 	#           gatsbyImageData(layout: FULL_WIDTH)
-// 	#         }
-// 	#       }
-// 	#     }
-// 	#   }
-// 	# }

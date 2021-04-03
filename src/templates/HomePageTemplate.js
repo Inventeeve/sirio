@@ -4,17 +4,19 @@ import HeaderSection from "../sections/HeaderSection"
 import PricingSection from "../sections/PricingSection"
 import FooterSection from "../sections/FooterSection"
 import ContactSection from "../sections/ContactSection"
-// import SocialSection from "../sections/SocialSection"
+import SocialSection from "../sections/SocialSection"
 
 const HomePageTemplate = ({
   title,
   subtitle,
-	description,
+  description,
+  focusMessage,
   blurbs,
   featuredImage,
   prices,
   social,
-  // instagram,
+  contacts,
+  instagram,
 }) => {
   return (
     <div>
@@ -22,10 +24,10 @@ const HomePageTemplate = ({
         data={{ title, subtitle, description, featuredImage, prices, social }}
       />
       <div className="container mx-auto">
-        <FeaturesSection blurbs={blurbs} />
+        <FeaturesSection focusMessage={focusMessage} blurbs={blurbs} />
         <PricingSection prices={prices} />
-        {/* <SocialSection posts={instagram} /> */}
-        <ContactSection />
+        <SocialSection posts={instagram} />
+        <ContactSection contacts={contacts} />
         <FooterSection social={social} />
       </div>
     </div>

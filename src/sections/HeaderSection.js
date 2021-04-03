@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { BurgerIcon, CloseIcon } from "../components/icons"
-import logo from "../images/logo-sirio.png"
+// import logo from "../images/logo-sirio.png"
 
 const Nav = [
   { label: "I nostri trattamenti", link: "#blurbs", type: "standard" },
