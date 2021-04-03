@@ -31,7 +31,7 @@ const ContactSection = ({ contacts }) => (
                 <div className="ml-3">
                   <dt className="sr-only">Indirizzo</dt>
                   <dd>
-                    <p>{contacts.contactaddress.contacttreet}</p>
+                    <p>{contacts.contactaddress.contactstreet}</p>
                     <p>{contacts.contactaddress.contactcity}</p>
                   </dd>
                 </div>
