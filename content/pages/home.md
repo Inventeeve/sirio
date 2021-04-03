@@ -23,7 +23,7 @@ prices:
   - category: Trattamenti Corpo
     entries:
       - label: Trattamento pelle di seta
-        price: 35.99
+        price: 35
       - label: Trattamento pelle di seta con Thermalie
         price: 54.9
       - label: Trattamento riducente no cell
@@ -67,7 +67,7 @@ prices:
       - label: Depilazione gambe+inguine
         price: 28
       - label: Depilazione parziale
-        price: 17
+        price: 17.5
       - label: Depilazione parziale+inguine
         price: 19
       - label: Depilazione braccia
