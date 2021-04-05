@@ -118,8 +118,8 @@ prices:
         price: 10
 contacts:
   contacttitle: Contattaci
-  contactdescription: Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-    volutpat massa dictumst amet. Sapien tortor lacus arcu.
+  contactdescription: Contattaci  Per informazioni e'possibile mandare una mail,
+    invece per appuntamento é necessario chiamare.
   contactaddress:
     contactstreet: "Via Marconi 7 "
     contactcity: Cogliate (MB)
