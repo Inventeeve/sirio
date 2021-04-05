@@ -25,7 +25,7 @@ prices:
       - label: Trattamento pelle di seta
         price: 35
       - label: Trattamento pelle di seta con Thermalie
-        price: 54.9
+        price: 55
       - label: Trattamento riducente no cell
         price: 55
       - label: Trattamento tonic up
@@ -69,11 +69,11 @@ prices:
       - label: Depilazione parziale
         price: 17.5
       - label: Depilazione parziale+inguine
-        price: 19
+        price: 19.5
       - label: Depilazione braccia
-        price: 15
+        price: 15.5
       - label: Depilazione inguine/ascelle/glutei
-        price: 7
+        price: 7.5
       - label: Depilazione baffetti/sopracciglia
         price: 4
       - label: Depilazione petto/schiena
@@ -81,7 +81,7 @@ prices:
   - category: MANICURE-PEDICURE
     entries:
       - label: Manicure
-        price: 12
+        price: 12.5
       - label: Pedicure estetico
         price: 20
       - label: Pedicure curativo+estetico
