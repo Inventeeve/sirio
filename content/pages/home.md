@@ -10,7 +10,7 @@ focusmessage:
   messagedescription: Trattamenti SPA, trattamenti viso antirughe, filler, acido
     glicolico, trattamenti corpo modellanti anticellulite con bagni di vapore,
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
-    trucco e molto altro.
+    trucco e copertura cicatrici (da definire)
 blurbs:
   - title: no cell
     body: Il trattamento corpo Anti-Cellulit e Anti-Age per combattere cellulite ed
