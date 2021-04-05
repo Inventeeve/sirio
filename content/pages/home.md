@@ -118,8 +118,8 @@ prices:
         price: 10
 contacts:
   contacttitle: Contattaci
-  contactdescription: Contattaci  Per informazioni e'possibile mandare una mail,
-    invece per appuntamento é necessario chiamare.
+  contactdescription: Per informazioni é possibile mandare una mail, invece per
+    appuntamento é necessario chiamare.
   contactaddress:
     contactstreet: "Via Marconi 7 "
     contactcity: Cogliate (MB)
