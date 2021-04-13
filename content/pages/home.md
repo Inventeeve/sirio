@@ -15,8 +15,8 @@ blurbs:
   - title: BELLEZZA DA SELFIE (ideale per la pelle secca  o disidratata)
     body: Crema viso + contorno occhi
     image: /images/06-removebg-preview.png
-  - title: age lumina
-    body: La linea ad azione illuminante, anti-eta' e macchie pigmentarie.
+  - title: BELLEZZA DA SELFIE (ideale per la pelle impura o mista)
+    body: Crema viso + contorno occhi
     image: /images/07-removebg-preview.png
 prices:
   - category: Trattamenti Corpo
