@@ -12,8 +12,8 @@ focusmessage:
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
     trucco e copertura cicatrici (da definire)
 blurbs:
-  - title: HYDRASENCE
-    body: BELLEZZA DA SELFIE, ideale per la pelle secca  o disidratata
+  - title: BELLEZZA DA SELFIE (ideale per la pelle secca  o disidratata)
+    body: Crema viso + contorno occhi
     image: /images/06-removebg-preview.png
   - title: age lumina
     body: La linea ad azione illuminante, anti-eta' e macchie pigmentarie.
