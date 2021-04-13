@@ -12,9 +12,8 @@ focusmessage:
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
     trucco e copertura cicatrici (da definire)
 blurbs:
-  - title: no cell
-    body: Il trattamento corpo Anti-Cellulit e Anti-Age per combattere cellulite ed
-      invecchiamento cutaneo.
+  - title: HYDRASENCE
+    body: BELLEZZA DA SELFIE, ideale per la pelle secca  o disidratata
     image: /images/06-removebg-preview.png
   - title: age lumina
     body: La linea ad azione illuminante, anti-eta' e macchie pigmentarie.
