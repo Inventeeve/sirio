@@ -10,7 +10,7 @@ focusmessage:
   messagedescription: Trattamenti SPA, trattamenti viso antirughe, filler, acido
     glicolico, trattamenti corpo modellanti anticellulite con bagni di vapore,
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
-    trucco e copertura cicatrici (da definire)
+    trucco.
 blurbs:
   - title: BELLEZZA DA SELFIE (ideale per la pelle secca  o disidratata)
     body: Crema viso + contorno occhi
