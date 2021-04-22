@@ -126,7 +126,7 @@ contacts:
   contactaddress:
     contactstreet: "Via Marconi 7 "
     contactcity: Cogliate (MB)
-  contactphone: +39 02 99068753
+  contactphone: +39 02 99068753/333 8297248
   contactemail: massi.laura26@hotmail.it
 footer:
   social:
