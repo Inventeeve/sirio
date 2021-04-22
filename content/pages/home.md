@@ -13,7 +13,7 @@ focusmessage:
     trucco.
 blurbs:
   - title: NO CELL (Anti-Cellulite e Anti-Age)
-    body: Crema viso + contorno occhi
+    body: Per combattere cellulite ed invecchiamento cutaneo
     image: /images/azione-anti-cellulite.jpg
   - title: BELLEZZA DA SELFIE (ideale per la pelle impura o mista)
     body: Crema viso + contorno occhi
