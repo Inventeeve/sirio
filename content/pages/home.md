@@ -14,7 +14,7 @@ focusmessage:
 blurbs:
   - title: BELLEZZA DA SELFIE (ideale per la pelle secca  o disidratata)
     body: Crema viso + contorno occhi
-    image: /images/06-removebg-preview.png
+    image: /images/azione-anti-cellulite.jpg
   - title: BELLEZZA DA SELFIE (ideale per la pelle impura o mista)
     body: Crema viso + contorno occhi
     image: /images/07-removebg-preview.png
