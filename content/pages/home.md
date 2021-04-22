@@ -12,7 +12,7 @@ focusmessage:
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
     trucco.
 blurbs:
-  - title: BELLEZZA DA SELFIE (ideale per la pelle secca  o disidratata)
+  - title: NO CELL (Anti-Cellulite e Anti-Age)
     body: Crema viso + contorno occhi
     image: /images/azione-anti-cellulite.jpg
   - title: BELLEZZA DA SELFIE (ideale per la pelle impura o mista)
