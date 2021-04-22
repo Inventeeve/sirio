@@ -41,6 +41,10 @@ prices:
         price: 35
       - label: R.E.M. ultrasuoni
         price: 45
+      - label: Linfodrenaggio parziale 45 min
+        price: 40
+      - label: Linfodrenaggio intero 75 min
+        price: 70
   - category: Trattamenti Viso
     entries:
       - label: Pulizia viso profonda
