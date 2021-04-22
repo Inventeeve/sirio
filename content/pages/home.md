@@ -15,9 +15,9 @@ blurbs:
   - title: NO CELL (Anti-Cellulite e Anti-Age)
     body: Per combattere cellulite ed invecchiamento cutaneo
     image: /images/azione-anti-cellulite.jpg
-  - title: BELLEZZA DA SELFIE (ideale per la pelle impura o mista)
-    body: Crema viso + contorno occhi
-    image: /images/07-removebg-preview.png
+  - title: BLUE ANTIOX
+    body: Nuova vitalità per la pelle spenta e stressata
+    image: /images/pelle-spenta-e-tressata.jpg
 prices:
   - category: Trattamenti Corpo
     entries:
