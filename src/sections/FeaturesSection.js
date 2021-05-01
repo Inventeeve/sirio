@@ -4,9 +4,9 @@ import ReactMarkdow from "react-markdown"
 const FeaturesSection = ({ focusMessage, blurbs }) => (
   <>
     <div className="py-12 bg-white" id="blurbs">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         {focusMessage && (
-          <div className="lg:text-center">
+          <div className="sm:text-center">
             <p className="text-base leading-6 text-pink-600 font-semibold tracking-wide uppercase">
               {focusMessage.messagedate}
             </p>

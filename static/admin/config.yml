@@ -4,7 +4,7 @@ backend:
   name: git-gateway
   branch: main
 
-# local_backend: true
+local_backend: true
 
 media_folder: static/images
 public_folder: /images
@@ -80,18 +80,37 @@ collections:
           - {
               label: Listino Prezzi,
               name: prices,
-              widget: list,
+              widget: object,
               fields:
                 [
-                  { label: Titolo, name: category, widget: string },
+                  { label: Titolo, name: pricestitle, widget: string },
                   {
-                    label: Prezzi,
-                    name: entries,
+                    label: Descrizione,
+                    name: pricesdescription,
+                    widget: string,
+                  },
+                  {
+                    label: Listino Prezzi,
+                    name: priceslist,
                     widget: list,
                     fields:
                       [
-                        { label: Prodotto, name: label, widget: string },
-                        { label: Prezzo, name: price, widget: number, value_type: float },
+                        { label: Titolo, name: category, widget: string },
+                        {
+                          label: Prezzi,
+                          name: entries,
+                          widget: list,
+                          fields:
+                            [
+                              { label: Prodotto, name: label, widget: string },
+                              {
+                                label: Prezzo,
+                                name: price,
+                                widget: number,
+                                value_type: float,
+                              },
+                            ],
+                        },
                       ],
                   },
                 ],

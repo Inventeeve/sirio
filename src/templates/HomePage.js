@@ -26,7 +26,7 @@ const HomePage = ({ data: { page, instagram } }) => {
       prices={prices}
       contacts={contacts}
       social={footer.social}
-      instagram={instagram}
+      // instagram={instagram}
     />
   )
 }
@@ -53,10 +53,14 @@ export const pageQuery = graphql`
           body
         }
         prices {
-          category
-          entries {
-            label
-            price
+					pricestitle,
+          pricesdescription,
+          priceslist {
+						category
+            entries {
+							label
+              price
+            }
           }
         }
         contacts {
@@ -78,27 +82,27 @@ export const pageQuery = graphql`
       }
     }
 
-    instagram: allInstaNode(
-      limit: 3
-      sort: { order: DESC, fields: timestamp }
-    ) {
-      edges {
-        node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
-          localFile {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-        }
-      }
-    }
+    # instagram: allInstaNode(
+    #   limit: 3
+    #   sort: { order: DESC, fields: timestamp }
+    # ) {
+    #   edges {
+    #     node {
+    #       id
+    #       likes
+    #       comments
+    #       mediaType
+    #       preview
+    #       original
+    #       timestamp
+    #       caption
+    #       localFile {
+    #         childImageSharp {
+    #           gatsbyImageData(layout: FULL_WIDTH)
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
   }
 `

@@ -24,17 +24,14 @@ const PricingSections = ({ prices }) => (
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-4xl leading-none font-extrabold text-gray-900 sm:text-center">
-            Listino Prezzi
+            {prices.pricestitle}
           </h1>
           <p className="mt-5 text-xl leading-7 text-gray-500 sm:text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-            assumenda quisquam aut repellendus quibusdam in et mollitia
-            veritatis blanditiis laboriosam! Provident explicabo quis nihil
-            natus ad. Optio laudantium animi natus!
+            {prices.pricesdescription}
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
-          {prices.map((entry, key) => (
+          {prices.priceslist.map((entry, key) => (
             <div
               key={key}
               className="rounded-lg shadow-lg divide-y divide-gray-200"
