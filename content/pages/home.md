@@ -120,8 +120,6 @@ prices:
           price: 350
         - label: Riempimento labbra
           price: 450
-        - label: copertura cicatrici
-          price: 11
 contacts:
   contacttitle: Contattaci
   contactdescription: Per informazioni é possibile mandare una mail, invece per
