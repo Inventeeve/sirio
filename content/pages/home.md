@@ -20,8 +20,7 @@ blurbs:
     image: /images/pelle-spenta-e-tressata.jpg
 prices:
   pricestitle: Listino Prezzi
-  pricesdescription: "Il costo di alcuni trattamenti verrà concordato in negozio
-    con il cliente; es: copertura cicatrici"
+  pricesdescription: Il costo di alcuni trattamenti verrà concordato in negozio con il cliente.
   priceslist:
     - category: Trattamenti Corpo
       entries:
