@@ -125,7 +125,8 @@ prices:
 contacts:
   contacttitle: Contattaci
   contactdescription: Per informazioni é possibile mandare una mail, invece per
-    appuntamento é necessario chiamare.
+    appuntamento é necessario chiamare. Chiuso il lunedì, dal martedì al sabato
+    9.00-12.00/14.00-18.30
   contactaddress:
     contactstreet: "Via Marconi 7 "
     contactcity: Cogliate (MB)
@@ -135,7 +136,7 @@ footer:
   social:
     facebook: https://www.facebook.com/Summa.Laura.77
     instagram: https://www.instagram.com/sirio.lastelladelbenessere/
-    twitter: "null"
+    twitter: ""
 description: Sirio la stella del benessere e' un centro estetico sito in
   Cogliate specializzato in diverse tipologie di trattamenti estetici,
   personalizzati ed avanzati.
