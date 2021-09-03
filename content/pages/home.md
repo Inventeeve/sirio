@@ -5,7 +5,7 @@ featuredImage: /images/logo.png
 title: Sirio
 subtitle: la stella del benessere
 focusmessage:
-  messagedate: 09/03/2021
+  messagedate: 03/09/2021
   messagetitle: Chiuso per ferie dal 28 Agosto al 7 Settembre
   messagedescription: Trattamenti SPA, trattamenti viso antirughe, filler, acido
     glicolico, trattamenti corpo modellanti anticellulite con bagni di vapore,
