@@ -6,7 +6,7 @@ title: Sirio
 subtitle: la stella del benessere
 focusmessage:
   messagedate: ""
-  messagetitle: ""
+  messagetitle: Chiusura 4, 5 e 6 Gennaio 2022
   messagedescription: Trattamenti SPA, trattamenti viso antirughe, filler, acido
     glicolico, trattamenti corpo modellanti anticellulite con bagni di vapore,
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
