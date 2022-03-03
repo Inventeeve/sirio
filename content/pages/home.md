@@ -71,35 +71,35 @@ prices:
     - category: Depilazione
       entries:
         - label: Depilazione gambe+inguine
-          price: 28
+          price: 29
         - label: Depilazione parziale
-          price: 17.5
+          price: 18
         - label: Depilazione parziale+inguine
-          price: 19.5
+          price: 20
         - label: Depilazione braccia
-          price: 15.5
+          price: 16
         - label: Depilazione inguine/ascelle/glutei
-          price: 7.5
+          price: 8
         - label: Depilazione baffetti/sopracciglia
-          price: 4
+          price: 5
         - label: Depilazione petto/schiena
-          price: 21
+          price: 22
     - category: Manicure - Pedicure
       entries:
         - label: Manicure
-          price: 12.5
+          price: 13
         - label: Pedicure estetico
           price: 20
         - label: Pedicure curativo+estetico
           price: 30
         - label: Smalto semipermanente
-          price: 20
+          price: 25
         - label: Ricostruzione unghie in gel
           price: 60
         - label: Refil
-          price: 30
+          price: 35
         - label: Semipermanente con rinforzo
-          price: 25
+          price: 30
     - category: Trucco viso
       entries:
         - label: Trucco giorno/sera
