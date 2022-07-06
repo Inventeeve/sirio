@@ -2,7 +2,7 @@
 template: HomePage
 slug: /
 featuredImage: /images/logo.png
-title: Chiusura dal 10/07 al 17/07 e dal 30/08 al 04/09
+title: Chiusura dal 10/07 al 17/07 - 30/08 al 04/09
 subtitle: Sirio la stella del benessere
 focusmessage:
   messagedate: ""
