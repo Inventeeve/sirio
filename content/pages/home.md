@@ -6,7 +6,7 @@ title: Sirio
 subtitle: la stella del benessere
 focusmessage:
   messagedate: ""
-  messagetitle: ""
+  messagetitle: Chiusura dal 10 al 17 Luglio e dal 30 Agosto al 4 Settembre
   messagedescription: Trattamenti SPA, trattamenti viso antirughe, filler, acido
     glicolico, trattamenti corpo modellanti anticellulite con bagni di vapore,
     pedicure curativo, ricostruzione unghie, smalto semipermanente, depilazione,
