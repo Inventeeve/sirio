@@ -2,8 +2,8 @@
 template: HomePage
 slug: /
 featuredImage: /images/logo.png
-title: Chiusura dal 30/08 al 04/09
-subtitle: Sirio la stella del benessere
+title: Sirio la stella del benessere
+subtitle: ""
 focusmessage:
   messagedate: ""
   messagetitle: ""
