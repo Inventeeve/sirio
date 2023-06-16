@@ -2,8 +2,8 @@
 template: HomePage
 slug: /
 featuredImage: /images/logo.png
-title: Sirio la stella del benessere
-subtitle: ""
+title: Chiusura dal 9 al 16 Luglio
+subtitle: Sirio la stella del benessere
 focusmessage:
   messagedate: ""
   messagetitle: ""
