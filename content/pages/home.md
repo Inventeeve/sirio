@@ -14,7 +14,7 @@ focusmessage:
 blurbs:
   - title: NO CELL (Anti-Cellulite e Anti-Age)
     body: Per combattere cellulite ed invecchiamento cutaneo
-    image: /images/azione-anti-cellulite.jpg
+    image: /images/06.jpg
   - title: BLUE ANTIOX
     body: Nuova vitalità per la pelle spenta e stressata
     image: /images/pelle-spenta-e-tressata.jpg
