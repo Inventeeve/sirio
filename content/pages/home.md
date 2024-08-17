@@ -2,7 +2,7 @@
 template: HomePage
 slug: /
 featuredImage: /images/logo.png
-title: Chiusura dal 9 al 16 Luglio
+title: Nuovo listino prezzi
 subtitle: Sirio la stella del benessere
 focusmessage:
   messagedate: ""
@@ -50,8 +50,8 @@ prices:
           price: 70
     - category: Trattamenti Viso
       entries:
-        - label: Pulizia viso profonda
-          price: 38
+        - label: Pulizia viso
+          price: 40
         - label: Trattamento olos age
           price: 56
         - label: Trattamento filler
@@ -71,16 +71,16 @@ prices:
     - category: Depilazione
       entries:
         - label: Depilazione gambe+inguine
-          price: 29
+          price: 30
         - label: Depilazione parziale
-          price: 18
+          price: 17.5
         - label: Depilazione parziale+inguine
-          price: 20
+          price: 22
         - label: Depilazione braccia
           price: 16
-        - label: Depilazione inguine/ascelle/glutei
-          price: 8
-        - label: Depilazione baffetti/sopracciglia
+        - label: Depilazione inguine o ascelle
+          price: 10
+        - label: Depilazione baffetti e sopracciglia (cad.)
           price: 5
         - label: Depilazione petto/schiena
           price: 22
@@ -90,16 +90,18 @@ prices:
           price: 13
         - label: Pedicure estetico
           price: 20
-        - label: Pedicure curativo+estetico
+        - label: Pedicure curativo+estetico (completo)
+          price: 32
+        - label: Smalto semipermanente + manicure
           price: 30
-        - label: Smalto semipermanente
-          price: 25
         - label: Ricostruzione unghie in gel
-          price: 60
-        - label: Refil
-          price: 35
+          price: 65
+        - label: Refil con gel
+          price: 40
         - label: Semipermanente con rinforzo
           price: 30
+        - label: Pedicure+smalto semipermanente
+          price: 45
     - category: Trucco viso
       entries:
         - label: Trucco giorno/sera
